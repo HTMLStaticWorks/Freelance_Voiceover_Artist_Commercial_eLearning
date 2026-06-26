@@ -1,0 +1,66 @@
+/* 
+  =========================================
+  LANGUAGES VIEW SPECIFIC STYLES (css/views/languages.css)
+  =========================================
+*/
+
+/* Language status badges */
+.lang-badge {
+  font-family: var(--font-secondary);
+  font-size: 0.7rem;
+  font-weight: var(--weight-bold);
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+  letter-spacing: 0.05em;
+}
+.badge-native {
+  background: rgba(16, 185, 129, 0.1);
+  color: var(--accent-emerald);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+}
+.badge-fluent {
+  background: rgba(59, 130, 246, 0.1);
+  color: var(--primary-blue);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+/* Accents breakdown grid */
+.accents-showcase-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: 48px;
+}
+.accent-detail-card {
+  padding: 32px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--glass-border);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.accent-detail-card h3 {
+  font-size: 1.25rem;
+  font-weight: var(--weight-h3);
+  color: var(--text-primary);
+  margin-bottom: 12px;
+}
+.accent-detail-card p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Responsive language details */
+@media (max-width: 900px) {
+  .accents-showcase-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .accents-showcase-grid {
+    grid-template-columns: 1fr;
+  }
+}

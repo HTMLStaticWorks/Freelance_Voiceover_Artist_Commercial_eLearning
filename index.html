@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Meta Tags -->
+  <title>Aura Voice | Premium Voiceover Artist Portfolio (Commercial & eLearning)</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <meta name="description"
+    content="World-class premium voiceover portfolio of Aura Voice. Specializing in Commercial, Corporate Narration, eLearning, IVR, Explainer Videos, and Audiobooks. Studio-quality sound, fast delivery, and multiple accent capabilities.">
+  <meta name="keywords"
+    content="voiceover artist, commercial voice, elearning narration, corporate voiceover, audiobook reader, IVR voice, brand voice, voice actor, professional recording studio">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Aura Voice | Premium Voiceover Artist Portfolio">
+  <meta property="og:description"
+    content="Discover world-class, studio-quality commercial and corporate voiceover narration. Fast turnaround, pristine acoustic delivery.">
+  <meta property="og:image" content="assets/images/studio_mic.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Aura Voice | Premium Voiceover Artist Portfolio">
+  <meta property="twitter:description"
+    content="Discover world-class, studio-quality commercial and corporate voiceover narration. Fast turnaround, pristine acoustic delivery.">
+  <meta property="twitter:image" content="assets/images/studio_mic.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Manrope:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/views/home.css">
+  <link rel="stylesheet" href="css/views/about.css">
+  <link rel="stylesheet" href="css/views/demos.css">
+  <link rel="stylesheet" href="css/views/services.css">
+  <link rel="stylesheet" href="css/views/languages.css">
+  <link rel="stylesheet" href="css/views/pricing.css">
+  <link rel="stylesheet" href="css/views/audition.css">
+  <link rel="stylesheet" href="css/views/contact.css">
+</head>
+
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="custom-cursor" id="custom-cursor"></div>
+  <div class="custom-cursor-glow" id="custom-cursor-glow"></div>
+
+  <!-- Soundwave Loader Screen -->
+  <div class="loading-screen" id="loading-screen">
+    <div class="loader-content">
+      <div class="loader-mic">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z" />
+          <path d="M19 10v1a7 7 0 0 1-14 0v-1" />
+          <line x1="12" x2="12" y1="19" y2="22" />
+        </svg>
+      </div>
+      <div class="loader-wave">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <p class="loader-text">Aura Voice Production</p>
+    </div>
+  </div>
+
+  <!-- Background Decorative Aurora Blobs -->
+  <div class="bg-blobs">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <!-- Global Header Navigation -->
+  <header class="global-header frosted" id="global-header">
+    <div class="nav-container">
+      <a href="#home" class="brand-logo" id="brand-logo" aria-label="Aura Voice Home">
+        <span class="logo-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M12 2v20M17 5v14M22 9v6M7 7v10M2 10v4" />
+          </svg>
+        </span>
+        <span class="logo-text">AURA<span>
+      </a>
+
+      <!-- Desktop Nav Menu -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active" data-link="home">Home</a></li>
+          <li><a href="#home2" class="nav-link" data-link="home2">Home 2</a></li>
+          <li><a href="#about" class="nav-link" data-link="about">About</a></li>
+          <li><a href="#demos" class="nav-link" data-link="demos">Voice Demos</a></li>
+          <li><a href="#services" class="nav-link" data-link="services">Services</a></li>
+          <li><a href="#languages" class="nav-link" data-link="languages">Languages</a></li>
+          <li><a href="#pricing" class="nav-link" data-link="pricing">Pricing</a></li>
+          <li><a href="#audition" class="nav-link" data-link="audition">Audition</a></li>
+          <li><a href="#contact" class="nav-link" data-link="contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Right Controls -->
+      <div class="nav-controls">
+        <!-- RTL Toggle -->
+        <button class="rtl-toggle-btn" id="rtl-toggle-btn" aria-label="Toggle text direction">
+          <svg class="rtl-icon-ltr" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 6h16M4 12h10M4 18h16" />
+            <polyline points="10 8 14 12 10 16" />
+          </svg>
+          <svg class="rtl-icon-rtl" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 6H4M20 12H10M20 18H4" />
+            <polyline points="14 8 10 12 14 16" />
+          </svg>
+        </button>
+
+        <!-- Theme Toggle -->
+        <button class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Toggle light and dark mode">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4" />
+            <path
+              d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" />
+          </svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+          </svg>
+        </button>
+
+        <!-- CTA Audition Button -->
+        <a href="#audition" class="btn btn-primary btn-nav-cta">Book Audition</a>
+
+        <!-- Hamburger Icon -->
+        <button class="hamburger-menu" id="hamburger-menu" aria-label="Open mobile menu" aria-expanded="false"
+          aria-controls="mobile-drawer">
+          <span class="hamburger-line line-top"></span>
+          <span class="hamburger-line line-mid"></span>
+          <span class="hamburger-line line-bot"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer frosted" id="mobile-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    <div class="drawer-header">
+      <a href="#home" class="brand-logo mobile-logo">
+        <span class="logo-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M12 2v20M17 5v14M22 9v6M7 7v10M2 10v4" />
+          </svg>
+        </span>
+        <span class="logo-text">AURA<span>VOICE</span></span>
+      </a>
+      <button class="drawer-close" id="drawer-close" aria-label="Close mobile menu">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </button>
+    </div>
+    <nav class="mobile-nav" aria-label="Mobile Main Navigation">
+      <ul class="mobile-nav-list">
+        <li><a href="#home" class="mobile-nav-link" data-link="home">Home</a></li>
+        <li><a href="#home2" class="mobile-nav-link" data-link="home2">Home 2</a></li>
+        <li><a href="#about" class="mobile-nav-link" data-link="about">About</a></li>
+        <li><a href="#demos" class="mobile-nav-link" data-link="demos">Voice Demos</a></li>
+        <li><a href="#services" class="mobile-nav-link" data-link="services">Services</a></li>
+        <li><a href="#languages" class="mobile-nav-link" data-link="languages">Languages & Accents</a></li>
+        <li><a href="#pricing" class="mobile-nav-link" data-link="pricing">Pricing</a></li>
+        <li><a href="#audition" class="mobile-nav-link" data-link="audition">Audition Request</a></li>
+        <li><a href="#contact" class="mobile-nav-link" data-link="contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="drawer-footer">
+      <a href="#audition" class="btn btn-primary w-full text-center">Request Free Audition</a>
+      <div class="drawer-socials">
+        <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            class="social-icon">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+            <rect x="2" y="9" width="4" height="12" />
+            <circle cx="4" cy="4" r="2" />
+          </svg></a>
+        <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            class="social-icon">
+            <path
+              d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
+          </svg></a>
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            class="social-icon">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+          </svg></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- SPA Core Main Container (Views injected here) -->
+  <main id="app-view" class="view-transition-container"></main>
+
+  <!-- Global Footer -->
+  <footer class="global-footer">
+    <div class="footer-container">
+
+      <!-- Footer Brand Info -->
+      <div class="footer-brand">
+        <a href="#home" class="brand-logo footer-logo">
+          <span class="logo-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M12 2v20M17 5v14M22 9v6M7 7v10M2 10v4" />
+            </svg>
+          </span>
+          <span class="logo-text">AURA<span>VOICE</span></span>
+        </a>
+        <p class="footer-desc">Premium studio-grade commercial, eLearning, and brand voiceovers. Bringing scripts to
+          life with cinematic tone, exceptional clarity, and elite audio mastering.</p>
+
+        <!-- Socials -->
+        <div class="footer-socials">
+          <a href="#" aria-label="LinkedIn" class="social-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+              <rect x="2" y="9" width="4" height="12" />
+              <circle cx="4" cy="4" r="2" />
+            </svg>
+          </a>
+          <a href="#" aria-label="Twitter" class="social-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path
+                d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
+            </svg>
+          </a>
+          <a href="#" aria-label="Instagram" class="social-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+            </svg>
+          </a>
+          <a href="#" aria-label="SoundCloud" class="social-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M12 2v20M17 5v14M22 9v6M7 7v10M2 10v4M12 6c-2 0-4 1.5-4 4s2 4 4 4" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Links Grid -->
+      <div class="footer-links-grid">
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#demos">Voice Demos</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Services</h3>
+          <ul>
+            <li><a href="#services">Commercial VO</a></li>
+            <li><a href="#services">eLearning Narration</a></li>
+            <li><a href="#services">Corporate Training</a></li>
+            <li><a href="#services">IVR Systems</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Languages</h3>
+          <ul>
+            <li><a href="#languages">North American English</a></li>
+            <li><a href="#languages">British RP</a></li>
+            <li><a href="#languages">Transatlantic</a></li>
+            <li><a href="#languages">Mid-Atlantic Accent</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Newsletter -->
+      <div class="footer-newsletter">
+        <h3>Stay Tuned</h3>
+        <p>Subscribe to receive news on recent bookings, recording specs, and commercial updates.</p>
+        <form class="newsletter-form" id="newsletter-form" novalidate>
+          <div class="form-group-inline">
+            <input type="email" placeholder="Your email address" aria-label="Email address" required>
+            <button type="submit" class="btn btn-accent btn-icon" aria-label="Subscribe">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" class="btn-arrow">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </button>
+          </div>
+          <span class="validation-message" id="newsletter-validation"></span>
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer Copyright -->
+    <div class="footer-bottom">
+      <p>&copy; 2026 Aura Voice. All Rights Reserved. Crafted with acoustic precision.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Persistent Global Audio Player -->
+  <div class="global-audio-player frosted" id="global-audio-player">
+
+    <!-- Left: Track Details -->
+    <div class="player-track-info">
+      <div class="player-cover">
+        <img id="player-track-image" src="assets/images/studio_mic.png" alt="Cover Art">
+        <div class="sound-wave-mini playing" id="player-mini-wave">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+      <div class="player-metadata">
+        <h4 id="player-track-title">Commercial Voice Reel</h4>
+        <p id="player-track-category">Commercial</p>
+      </div>
+    </div>
+
+    <!-- Center: Playback Controls & Wave Visualizer -->
+    <div class="player-controls-container">
+      <div class="player-action-buttons">
+        <button id="player-btn-prev" class="btn-player-icon" aria-label="Previous Demo">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M6 6h2v12H6zm3.5 6l8.5 6V6z" />
+          </svg>
+        </button>
+        <button id="player-btn-play" class="btn-player-play" aria-label="Play">
+          <svg class="play-svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M8 5v14l11-7z" />
+          </svg>
+          <svg class="pause-svg hidden" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
+          </svg>
+        </button>
+        <button id="player-btn-next" class="btn-player-icon" aria-label="Next Demo">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Audio Progress and Real-time Frequency Spectrum Visualizer -->
+      <div class="player-progress-area">
+        <span class="player-time" id="player-time-current">0:00</span>
+        <div class="player-timeline" id="player-timeline">
+          <div class="player-progress-bar" id="player-progress-bar">
+            <div class="player-progress-handle"></div>
+          </div>
+          <!-- Canvas Web Audio Spectrum Visualizer background overlay -->
+          <canvas class="player-analyzer-canvas" id="player-analyzer-canvas"></canvas>
+        </div>
+        <span class="player-time" id="player-time-duration">0:00</span>
+      </div>
+    </div>
+
+    <!-- Right: Options (Speed, Volume, Download) -->
+    <div class="player-options-container">
+
+      <!-- Speed selector -->
+      <div class="player-speed-control">
+        <button id="player-speed-btn" class="player-opt-btn" aria-label="Playback speed">1.0x</button>
+        <div class="player-speed-dropdown frosted hidden" id="player-speed-dropdown">
+          <button data-speed="0.75">0.75x</button>
+          <button data-speed="1.0" class="active">1.0x</button>
+          <button data-speed="1.25">1.25x</button>
+          <button data-speed="1.5">1.5x</button>
+          <button data-speed="2.0">2.0x</button>
+        </div>
+      </div>
+
+      <!-- Volume -->
+      <div class="player-volume-control">
+        <button id="player-volume-btn" class="player-opt-btn" aria-label="Mute/Unmute">
+          <svg class="vol-icon-high" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" />
+            <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07" />
+          </svg>
+          <svg class="vol-icon-mute hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" />
+            <line x1="23" y1="9" x2="17" y2="15" />
+            <line x1="17" y1="9" x2="23" y2="15" />
+          </svg>
+        </button>
+        <div class="player-volume-slider-wrapper">
+          <input type="range" id="player-volume-slider" min="0" max="1" step="0.05" value="0.8"
+            aria-label="Volume slider">
+        </div>
+      </div>
+
+      <!-- Download button -->
+      <a href="#" id="player-download-btn" class="player-opt-btn" download aria-label="Download current demo">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+          <polyline points="7 10 12 15 17 10" />
+          <line x1="12" y1="15" x2="12" y2="3" />
+        </svg>
+      </a>
+    </div>
+
+  </div>
+
+  <!-- Audio Node (Hidden HTML5 Audio element) -->
+  <audio id="global-html5-audio" preload="auto"></audio>
+
+  <!-- Floating Scroll to Top Button -->
+  <button class="scroll-top-btn" id="scroll-top-btn" aria-label="Scroll to top">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Notification Popup (for form submission, actions) -->
+  <div class="notification-toast frosted" id="notification-toast">
+    <div class="toast-content">
+      <div class="toast-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="20 6 9 17 4 12" />
+        </svg>
+      </div>
+      <p class="toast-message">Success message here</p>
+    </div>
+  </div>
+
+  <!-- App Core JavaScripts -->
+  <script src="js/data.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/views.js"></script>
+  <script src="js/router.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>

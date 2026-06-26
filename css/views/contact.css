@@ -1,0 +1,133 @@
+/* 
+  =========================================
+  CONTACT VIEW SPECIFIC STYLES (css/views/contact.css)
+  =========================================
+*/
+
+/* Split grid layout */
+.contact-grid-split {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+/* Connection channels panel */
+.contact-details-panel {
+  padding: 48px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--glass-border);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contact-details-panel h2 {
+  font-size: 1.75rem;
+  font-weight: var(--weight-h2);
+  margin-bottom: 12px;
+}
+.contact-details-panel p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 32px;
+}
+
+/* Info icons list */
+.contact-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin-bottom: 40px;
+}
+.contact-info-item {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.ci-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+.contact-info-item > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.contact-info-item h4 {
+  font-size: 0.95rem;
+  font-weight: var(--weight-bold);
+  color: var(--text-primary);
+  margin: 0 0 4px 0;
+  text-align: left;
+}
+.contact-info-item p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin: 0;
+  text-align: left;
+}
+.contact-info-item a {
+  text-decoration: none;
+  color: var(--primary-blue);
+  font-weight: var(--weight-bold);
+  transition: var(--transition-smooth);
+}
+.contact-info-item a:hover {
+  color: var(--primary-purple);
+}
+
+/* Canvas location grid map */
+.studio-map-container {
+  width: 100%;
+  height: 200px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  position: relative;
+  border: 1px solid var(--border-color);
+}
+.studio-vector-map {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.map-overlay-card {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  padding: 10px 16px;
+  border-radius: var(--radius-sm);
+  z-index: 10;
+  max-width: calc(100% - 32px);
+}
+.map-overlay-card h4 {
+  font-size: 0.8rem;
+  font-weight: var(--weight-bold);
+  color: var(--text-primary);
+  margin-bottom: 2px;
+}
+.map-overlay-card p {
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+  margin-bottom: 0 !important;
+}
+
+/* Responsive tweaks */
+@media (max-width: 1024px) {
+  .contact-grid-split {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .contact-details-panel {
+    padding: 32px;
+  }
+}

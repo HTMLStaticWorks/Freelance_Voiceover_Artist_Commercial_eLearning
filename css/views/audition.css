@@ -1,0 +1,24 @@
+/* 
+  =========================================
+  AUDITION VIEW SPECIFIC STYLES (css/views/audition.css)
+  =========================================
+*/
+
+/* Submit wrapper button alignments */
+.form-submit-wrapper {
+  margin-top: 32px;
+}
+
+/* Make forms responsive to smaller devices */
+@media (max-width: 600px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .form-group.col-span-2 {
+    grid-column: span 1;
+  }
+  .form-container {
+    padding: 24px;
+  }
+}

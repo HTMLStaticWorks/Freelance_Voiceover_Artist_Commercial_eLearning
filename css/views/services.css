@@ -1,0 +1,119 @@
+/* 
+  =========================================
+  SERVICES VIEW SPECIFIC STYLES (css/views/services.css)
+  =========================================
+*/
+
+/* Service Card override to match identical heights and button alignment rules */
+.service-card {
+  height: 100%;
+}
+
+/* Industries Grid */
+.industries-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 48px;
+}
+.ind-item {
+  padding: 24px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--glass-border);
+  text-align: center;
+  font-family: var(--font-primary);
+  font-weight: var(--weight-bold);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+  transition: var(--transition-bounce);
+}
+.ind-item:hover {
+  transform: scale(1.05);
+  border-color: var(--primary-blue);
+  box-shadow: var(--glass-shadow);
+}
+
+/* Horizontal Process Timeline */
+.process-timeline-flex {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  margin-top: 60px;
+  position: relative;
+}
+.proc-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+.proc-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--bg-primary);
+  border: 2px solid var(--primary-blue);
+  color: var(--primary-blue);
+  font-weight: var(--weight-bold);
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 24px 0;
+  transition: var(--transition-bounce);
+}
+.proc-step:hover .proc-circle {
+  background: var(--grad-electric);
+  color: #0b0f19;
+  border-color: transparent;
+  box-shadow: 0 4px 15px rgba(6,182,212,0.3);
+}
+.proc-step h4 {
+  font-size: 1.1rem;
+  font-weight: var(--weight-h3);
+  margin: 0 0 12px 0;
+  color: var(--text-primary);
+}
+.proc-step p {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Connecting line for steps */
+.process-timeline-flex::before {
+  content: '';
+  position: absolute;
+  top: 25px;
+  left: 10%;
+  width: 80%;
+  height: 2px;
+  background: var(--border-color);
+  z-index: 1;
+}
+
+/* Responsive tweaks */
+@media (max-width: 1024px) {
+  .industries-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .process-timeline-flex {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 48px;
+  }
+  .process-timeline-flex::before {
+    display: none; /* Hide linear connector on wrapped grids */
+  }
+}
+@media (max-width: 600px) {
+  .industries-grid {
+    grid-template-columns: 1fr;
+  }
+  .process-timeline-flex {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
