@@ -58,9 +58,19 @@
   .accents-showcase-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+  .accents-showcase-grid > *:nth-child(3) {
+    grid-column: span 2;
+    justify-self: center;
+    width: calc(50% - 16px);
+  }
 }
 @media (max-width: 600px) {
   .accents-showcase-grid {
     grid-template-columns: 1fr;
+  }
+  .accents-showcase-grid > *:nth-child(3) {
+    grid-column: auto;
+    justify-self: stretch;
+    width: 100%;
   }
 }
