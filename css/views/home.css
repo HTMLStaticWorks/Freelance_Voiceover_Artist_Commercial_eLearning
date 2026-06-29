@@ -498,8 +498,10 @@
 }
 .studio-table:not(:has(thead)) th {
   width: 35%;
-  text-align: left;
-  padding: 16px 0;
+  text-align: start;
+  padding-block: 16px;
+  padding-inline-start: 0;
+  padding-inline-end: 16px;
   font-weight: var(--weight-bold);
   color: var(--text-primary);
   font-size: 0.95rem;
@@ -507,7 +509,10 @@
 }
 .studio-table:not(:has(thead)) td {
   width: 65%;
-  padding: 16px 0;
+  text-align: start;
+  padding-block: 16px;
+  padding-inline-start: 16px;
+  padding-inline-end: 0;
   color: var(--text-secondary);
   font-size: 0.95rem;
   vertical-align: top;
@@ -520,9 +525,27 @@
 }
 .studio-table:has(thead) th,
 .studio-table:has(thead) td {
-  text-align: left;
+  text-align: start;
   vertical-align: middle;
   padding: 12px;
+}
+
+/* RTL overrides for studio specs table */
+[dir="rtl"] .studio-table:not(:has(thead)) th {
+  text-align: right;
+  padding-block: 16px;
+  padding-inline-start: 0;
+  padding-inline-end: 16px;
+}
+[dir="rtl"] .studio-table:not(:has(thead)) td {
+  text-align: right;
+  padding-block: 16px;
+  padding-inline-start: 16px;
+  padding-inline-end: 0;
+}
+[dir="rtl"] .studio-table:has(thead) th,
+[dir="rtl"] .studio-table:has(thead) td {
+  text-align: right;
 }
 .studio-table:has(thead) th:first-child,
 .studio-table:has(thead) td:first-child {
@@ -537,12 +560,14 @@
 @media (max-width: 1024px) {
   .studio-table:not(:has(thead)) th {
     width: 35%;
-    padding: 12px 0;
+    padding-block: 12px;
+    padding-inline: 0;
     font-size: 0.9rem;
   }
   .studio-table:not(:has(thead)) td {
     width: 65%;
-    padding: 12px 0;
+    padding-block: 12px;
+    padding-inline: 0;
     font-size: 0.9rem;
   }
   .studio-table:has(thead) th,
@@ -554,12 +579,14 @@
 @media (max-width: 768px) {
   .studio-table:not(:has(thead)) th {
     width: 40%;
-    padding: 10px 0;
+    padding-block: 10px;
+    padding-inline: 0;
     font-size: 0.85rem;
   }
   .studio-table:not(:has(thead)) td {
     width: 60%;
-    padding: 10px 0;
+    padding-block: 10px;
+    padding-inline: 0;
     font-size: 0.85rem;
   }
   .studio-table:has(thead) th,
@@ -571,12 +598,14 @@
 @media (max-width: 480px) {
   .studio-table:not(:has(thead)) th {
     width: 45%;
-    padding: 8px 0;
+    padding-block: 8px;
+    padding-inline: 0;
     font-size: 0.8rem;
   }
   .studio-table:not(:has(thead)) td {
     width: 55%;
-    padding: 8px 0;
+    padding-block: 8px;
+    padding-inline: 0;
     font-size: 0.8rem;
   }
   .studio-table:has(thead) th,
@@ -735,20 +764,38 @@
 
 /* Responsive Home overrides */
 @media (max-width: 1024px) {
-  .hero-container,
-  .home2-view .hero-container {
+  .hero-container {
     display: grid !important;
     grid-template-columns: 1fr !important;
     text-align: center;
   }
+  .home2-view .hero-container {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    text-align: start !important;
+  }
   .home2-view .hero-stats-mini {
-    justify-content: center;
+    justify-content: flex-start !important;
   }
   .hero-badge {
     margin-bottom: 16px;
   }
   .hero-ctas {
     justify-content: center;
+  }
+  .home2-view .hero-text-content {
+    text-align: start !important;
+  }
+  .home2-view .hero-text-content h1 {
+    text-align: start !important;
+  }
+  .home2-view .hero-lead {
+    text-align: start !important;
+    margin-inline-start: 0 !important;
+    margin-inline-end: auto !important;
+  }
+  .home2-view .hero-ctas {
+    justify-content: flex-start !important;
   }
   .grid-split-2 {
     grid-template-columns: 1fr;
@@ -812,5 +859,61 @@
   }
   .horizontal-slide-item {
     flex: 0 0 320px;
+  }
+}
+
+/* Horizontal Scroll Buttons styling for Home2 recent campaigns */
+.scroll-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(10, 11, 16, 0.7);
+  border: 1px solid var(--glass-border);
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.scroll-btn:hover {
+  background: rgba(139, 92, 246, 0.2);
+  border-color: var(--primary-purple);
+  color: var(--accent-cyan);
+}
+
+.scroll-btn-left {
+  left: 10px;
+}
+
+.scroll-btn-right {
+  right: 10px;
+}
+
+@media (min-width: 1025px) {
+  .scroll-btn {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .scroll-btn {
+    display: flex !important;
+  }
+  .horizontal-scroll-container-flex {
+    padding-left: 60px !important;
+    padding-right: 60px !important;
   }
 }

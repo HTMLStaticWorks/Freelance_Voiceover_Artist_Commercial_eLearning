@@ -636,7 +636,7 @@ const VO_VIEWS = {
         </div>
 
         <!-- Section 6: Recent Brand Bookings (Horizontal scroll grid) -->
-        <div class="section-padding section-alt" style="overflow: hidden;">
+        <div class="section-padding section-alt" style="position: relative; overflow: hidden;">
           <div class="container-width">
             <div class="section-header">
               <span class="accent-title">Recent Campaigns</span>
@@ -644,22 +644,36 @@ const VO_VIEWS = {
               <p>Drag or scroll to explore our latest campaigns recorded in-studio.</p>
             </div>
             
-            <div class="horizontal-scroll-container-flex">
-              <div class="horizontal-slide-item" style="flex:0 0 350px; background:var(--card-bg); padding:24px; border-radius:var(--radius-md); border:1px solid var(--glass-border); display:flex; flex-direction:column; align-items:center; text-align:center;">
-                <img src="assets/images/commercial_production.png" alt="Commercial" style="width:100%; aspect-ratio:16/10; object-fit:cover; border-radius:var(--radius-sm); margin-bottom:16px;">
-                <h4>Next-Gen Automotive</h4>
-                <p style="font-size:0.85rem; color:var(--text-secondary); margin-top:8px;">Gritty commercial campaign voicing next-gen electric SUV slots.</p>
+            <div class="scroll-wrapper" style="position: relative;">
+              <button class="scroll-btn scroll-btn-left" id="slide-left-btn" aria-label="Scroll left">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+              </button>
+              
+              <div class="horizontal-scroll-container-flex" id="campaigns-scroll-container">
+                <div class="horizontal-slide-item" style="flex:0 0 350px; background:var(--card-bg); padding:24px; border-radius:var(--radius-md); border:1px solid var(--glass-border); display:flex; flex-direction:column; align-items:center; text-align:center;">
+                  <img src="assets/images/commercial_production.png" alt="Commercial" style="width:100%; aspect-ratio:16/10; object-fit:cover; border-radius:var(--radius-sm); margin-bottom:16px;">
+                  <h4>Next-Gen Automotive</h4>
+                  <p style="font-size:0.85rem; color:var(--text-secondary); margin-top:8px;">Gritty commercial campaign voicing next-gen electric SUV slots.</p>
+                </div>
+                <div class="horizontal-slide-item" style="flex:0 0 350px; background:var(--card-bg); padding:24px; border-radius:var(--radius-md); border:1px solid var(--glass-border); display:flex; flex-direction:column; align-items:center; text-align:center;">
+                  <img src="assets/images/elearning_art.png" alt="eLearning" style="width:100%; aspect-ratio:16/10; object-fit:cover; border-radius:var(--radius-sm); margin-bottom:16px;">
+                  <h4>University AI Course</h4>
+                  <p style="font-size:0.85rem; color:var(--text-secondary); margin-top:8px;">ENGAGING technical eLearning course detailing AI neural patterns.</p>
+                </div>
+                <div class="horizontal-slide-item" style="flex:0 0 350px; background:var(--card-bg); padding:24px; border-radius:var(--radius-md); border:1px solid var(--glass-border); display:flex; flex-direction:column; align-items:center; text-align:center;">
+                  <img src="assets/images/sound_waves.png" alt="Corporate" style="width:100%; aspect-ratio:16/10; object-fit:cover; border-radius:var(--radius-sm); margin-bottom:16px;">
+                  <h4>Global Tech Keynote</h4>
+                  <p style="font-size:0.85rem; color:var(--text-secondary); margin-top:8px;">Inspiring corporate narration briefing for major summit introductions.</p>
+                </div>
               </div>
-              <div class="horizontal-slide-item" style="flex:0 0 350px; background:var(--card-bg); padding:24px; border-radius:var(--radius-md); border:1px solid var(--glass-border); display:flex; flex-direction:column; align-items:center; text-align:center;">
-                <img src="assets/images/elearning_art.png" alt="eLearning" style="width:100%; aspect-ratio:16/10; object-fit:cover; border-radius:var(--radius-sm); margin-bottom:16px;">
-                <h4>University AI Course</h4>
-                <p style="font-size:0.85rem; color:var(--text-secondary); margin-top:8px;">ENGAGING technical eLearning course detailing AI neural patterns.</p>
-              </div>
-              <div class="horizontal-slide-item" style="flex:0 0 350px; background:var(--card-bg); padding:24px; border-radius:var(--radius-md); border:1px solid var(--glass-border); display:flex; flex-direction:column; align-items:center; text-align:center;">
-                <img src="assets/images/sound_waves.png" alt="Corporate" style="width:100%; aspect-ratio:16/10; object-fit:cover; border-radius:var(--radius-sm); margin-bottom:16px;">
-                <h4>Global Tech Keynote</h4>
-                <p style="font-size:0.85rem; color:var(--text-secondary); margin-top:8px;">Inspiring corporate narration briefing for major summit introductions.</p>
-              </div>
+              
+              <button class="scroll-btn scroll-btn-right" id="slide-right-btn" aria-label="Scroll right">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </button>
             </div>
           </div>
         </div>

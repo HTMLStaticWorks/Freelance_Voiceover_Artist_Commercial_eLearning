@@ -102,6 +102,9 @@ class Router {
       case 'home':
         this.initTestimonialsSlider();
         break;
+      case 'home2':
+        this.initHome2Scroller();
+        break;
       case 'about':
         this.initFaqAccordion();
         break;
@@ -207,6 +210,29 @@ class Router {
       dot.addEventListener('click', () => {
         const targetIdx = parseInt(dot.dataset.index);
         goToSlide(targetIdx);
+      });
+    });
+  }
+
+  // --- Widget: Home2 Recent Campaigns Horizontal Scroller ---
+  initHome2Scroller() {
+    const leftBtn = document.getElementById('slide-left-btn');
+    const rightBtn = document.getElementById('slide-right-btn');
+    const container = document.getElementById('campaigns-scroll-container');
+    
+    if (!leftBtn || !rightBtn || !container) return;
+    
+    leftBtn.addEventListener('click', () => {
+      container.scrollBy({
+        left: -320,
+        behavior: 'smooth'
+      });
+    });
+    
+    rightBtn.addEventListener('click', () => {
+      container.scrollBy({
+        left: 320,
+        behavior: 'smooth'
       });
     });
   }
