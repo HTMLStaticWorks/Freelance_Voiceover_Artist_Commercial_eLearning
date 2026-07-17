@@ -604,7 +604,7 @@ const VO_VIEWS = {
                     <canvas class="canvas-waveform" data-track-id="demo-elearning-2"></canvas>
                   </div>
                   <div class="card-action">
-                    <button class="btn btn-secondary btn-demo-trigger" data-track-id="demo-elearning-2">
+                    <button class="btn btn-primary btn-demo-trigger" data-track-id="demo-elearning-2" style="background:var(--grad-electric); color:#0b0f19;">
                       <svg class="play-icon-svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
                       <svg class="pause-icon-svg hidden" width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
                       <span>Play Raw</span>
@@ -744,10 +744,10 @@ const VO_VIEWS = {
         <div class="section-padding">
           <div class="container-width">
             <div class="cta-banner-card frosted" style="background:var(--grad-aurora);">
-              <h2 style="color:var(--text-inverse);">Connect with Aura Studio Today</h2>
+              <h2 style="color:#ffffff;">Connect with Aura Studio Today</h2>
               <p style="color:rgba(255,255,255,0.8);">Schedule a live remote session or request a custom rate card tailored to your distribution buyout metrics.</p>
               <div class="hero-ctas" style="justify-content:center;">
-                <a href="#audition" class="btn btn-accent">Request Audition</a>
+                <a href="#audition" class="btn btn-white">Request Audition</a>
                 <a href="#contact" class="btn btn-secondary" style="color:var(--text-primary);">Studio Inquiries</a>
               </div>
             </div>
@@ -766,6 +766,7 @@ const VO_VIEWS = {
           <div class="container-width">
             <span class="hero-badge">The Voice Behind the Mic</span>
             <h1>Aura's Story</h1>
+            <p class="hero-lead-center">A decade of theatrical training, professional audio engineering, and standard-setting vocal delivery.</p>
           </div>
         </div>
 
@@ -779,7 +780,7 @@ const VO_VIEWS = {
                 <p>Whether voicing high-energy commercial campaigns or highly technical 20-hour compliance training courses, I deliver consistent pacing, immaculate pronunciation, and broadcast-ready audio directly from my custom acoustic booth.</p>
               </div>
               <div class="split-image-wrapper">
-                <img src="assets/images/voice_artist_acting.png" alt="Aura voicing script" class="split-photo">
+                <img src="assets/images/about_voice_artist.png" alt="Aura voicing script" class="split-photo">
               </div>
             </div>
           </div>
@@ -821,21 +822,39 @@ const VO_VIEWS = {
             <div class="card-grid-center">
               <div class="card eq-card">
                 <div class="card-body">
-                  <div class="cap-icon">🎤</div>
+                  <div class="cap-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="width: 40px; height: 40px; color: var(--accent-cyan); margin: 0 auto 20px; display: block;">
+                      <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z" />
+                      <path d="M19 10v1a7 7 0 0 1-14 0v-1" />
+                      <line x1="12" x2="12" y1="19" y2="22" />
+                    </svg>
+                  </div>
                   <h3>Neumann U87 Ai</h3>
                   <p>The gold-standard vocal recording microphone. Delivers unparalleled presence and detail in the mid-range.</p>
                 </div>
               </div>
               <div class="card eq-card">
                 <div class="card-body">
-                  <div class="cap-icon">🎛️</div>
+                  <div class="cap-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="width: 40px; height: 40px; color: var(--accent-cyan); margin: 0 auto 20px; display: block;">
+                      <rect x="3" y="3" width="18" height="18" rx="2" />
+                      <circle cx="12" cy="12" r="4" />
+                      <path d="M12 2v6M12 16v6M2 12h6M16 12h6" />
+                    </svg>
+                  </div>
                   <h3>Apollo Twin Interface</h3>
                   <p>Universal Audio conversion with analog preamp simulation. Clean, noise-free gain modeling.</p>
                 </div>
               </div>
               <div class="card eq-card">
                 <div class="card-body">
-                  <div class="cap-icon">🚪</div>
+                  <div class="cap-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="width: 40px; height: 40px; color: var(--accent-cyan); margin: 0 auto 20px; display: block;">
+                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                      <path d="M9 10a3 3 0 0 1 6 0" />
+                      <path d="M12 13v3" />
+                    </svg>
+                  </div>
                   <h3>Acoustic Isolation</h3>
                   <p>Double-walled acoustic studio construction. Measures a -60dB noise floor, excluding all external room resonances.</p>
                 </div>
@@ -992,21 +1011,43 @@ const VO_VIEWS = {
             <div class="card-grid-center">
               <div class="card spec-details-card">
                 <div class="card-body">
-                  <div class="cap-icon">🎛️</div>
+                  <div class="cap-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="width: 40px; height: 40px; color: var(--accent-cyan); margin: 0 auto 20px; display: block;">
+                      <line x1="4" y1="21" x2="4" y2="14" />
+                      <line x1="4" y1="10" x2="4" y2="3" />
+                      <line x1="12" y1="21" x2="12" y2="12" />
+                      <line x1="12" y1="8" x2="12" y2="3" />
+                      <line x1="20" y1="21" x2="20" y2="16" />
+                      <line x1="20" y1="12" x2="20" y2="3" />
+                      <line x1="1" y1="14" x2="7" y2="14" />
+                      <line x1="9" y1="8" x2="15" y2="8" />
+                      <line x1="17" y1="16" x2="23" y2="16" />
+                    </svg>
+                  </div>
                   <h3>Breath Gating & Cleanup</h3>
                   <p>Meticulous editing to remove mouth clicks, pops, and excessive breaths while preserving natural dialogue rhythm.</p>
                 </div>
               </div>
               <div class="card spec-details-card">
                 <div class="card-body">
-                  <div class="cap-icon">🔊</div>
+                  <div class="cap-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="width: 40px; height: 40px; color: var(--accent-cyan); margin: 0 auto 20px; display: block;">
+                      <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" />
+                      <path d="M15.54 8.46a5 5 0 0 1 0 7.07M19.07 4.93a10 10 0 0 1 0 14.14" />
+                    </svg>
+                  </div>
                   <h3>Loudness Normalization</h3>
                   <p>Mastered precisely to EBU R128 (-23 LUFS) or digital streaming peaks (-14 to -16 LUFS) according to project needs.</p>
                 </div>
               </div>
               <div class="card spec-details-card">
                 <div class="card-body">
-                  <div class="cap-icon">📊</div>
+                  <div class="cap-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="width: 40px; height: 40px; color: var(--accent-cyan); margin: 0 auto 20px; display: block;">
+                      <path d="M3 10v4M6 6v12M9 12v0M12 4v16M15 8v8M18 11v2M21 9v6" />
+                      <line x1="2" y1="20" x2="22" y2="20" />
+                    </svg>
+                  </div>
                   <h3>Ultra-Low Noise Floor</h3>
                   <p>Recorded at -60dB noise floor or lower inside a custom acoustic booth, preventing room echoes or hardware hum.</p>
                 </div>
@@ -1127,12 +1168,52 @@ const VO_VIEWS = {
               <h2>Industries Served</h2>
             </div>
             <div class="industries-grid">
-              <div class="ind-item frosted">💡 Technology & SaaS</div>
-              <div class="ind-item frosted">🚗 Automotive Brands</div>
-              <div class="ind-item frosted">🏥 Healthcare & MedTech</div>
-              <div class="ind-item frosted">🏛️ Finance & Banking</div>
-              <div class="ind-item frosted">🕹️ Gaming & Interactive</div>
-              <div class="ind-item frosted">📚 eLearning Publishers</div>
+              <div class="ind-item frosted" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="width: 32px; height: 32px; color: var(--accent-cyan);">
+                  <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A5 5 0 0 0 8 8c0 1 .3 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" />
+                  <path d="M9 18h6M10 22h4" />
+                </svg>
+                <span>Technology & SaaS</span>
+              </div>
+              <div class="ind-item frosted" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="width: 32px; height: 32px; color: var(--accent-cyan);">
+                  <path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9C2 11.1 2 11.3 2 11.5V16c0 .6.4 1 1 1h2" />
+                  <circle cx="7" cy="17" r="2" />
+                  <path d="M9 17h6" />
+                  <circle cx="17" cy="17" r="2" />
+                </svg>
+                <span>Automotive Brands</span>
+              </div>
+              <div class="ind-item frosted" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="width: 32px; height: 32px; color: var(--accent-cyan);">
+                  <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                </svg>
+                <span>Healthcare & MedTech</span>
+              </div>
+              <div class="ind-item frosted" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="width: 32px; height: 32px; color: var(--accent-cyan);">
+                  <line x1="3" y1="22" x2="21" y2="22" />
+                  <line x1="6" y1="18" x2="6" y2="11" />
+                  <line x1="10" y1="18" x2="10" y2="11" />
+                  <line x1="14" y1="18" x2="14" y2="11" />
+                  <line x1="18" y1="18" x2="18" y2="11" />
+                  <polygon points="12 2 20 7 4 7" />
+                </svg>
+                <span>Finance & Banking</span>
+              </div>
+              <div class="ind-item frosted" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="width: 32px; height: 32px; color: var(--accent-cyan);">
+                  <rect x="2" y="6" width="20" height="12" rx="3" />
+                  <path d="M6 12h4M8 10v4M15 11h.01M18 13h.01" />
+                </svg>
+                <span>Gaming & Interactive</span>
+              </div>
+              <div class="ind-item frosted" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="width: 32px; height: 32px; color: var(--accent-cyan);">
+                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2zM22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+                </svg>
+                <span>eLearning Publishers</span>
+              </div>
             </div>
           </div>
         </div>
@@ -1242,7 +1323,7 @@ const VO_VIEWS = {
                 </table>
               </div>
               <div class="split-image-wrapper">
-                <img src="assets/images/headphones_desk.png" alt="Studio headphones and script sheets" class="split-photo">
+                <img src="assets/images/service_turnaround.png" alt="Studio calendar and project planner" class="split-photo">
               </div>
             </div>
           </div>

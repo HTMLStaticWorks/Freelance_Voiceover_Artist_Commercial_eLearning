@@ -157,19 +157,19 @@ const VO_DATA = {
       title: 'Corporate Training',
       icon: 'briefcase',
       desc: 'Pristine, professional corporate presentation narration, onboarding videos, and compliance tutorials.',
-      coverImage: 'assets/images/audio_workstation.png'
+      coverImage: 'assets/images/service_corporate.png'
     },
     {
       title: 'IVR & Telephone Systems',
       icon: 'phone',
       desc: 'Elegant phone directory prompts, automated routing scripts, and studio-grade on-hold branding solutions.',
-      coverImage: 'assets/images/headphones_desk.png'
+      coverImage: 'assets/images/service_ivr.png'
     },
     {
       title: 'Explainer Videos',
       icon: 'video',
       desc: 'Friendly, conversational, and energetic styles that simplify complex products or tech apps for users.',
-      coverImage: 'assets/images/explainer_saas.png'
+      coverImage: 'assets/images/service_explainer.png'
     },
     {
       title: 'Podcast Intro/Outro',
@@ -181,13 +181,13 @@ const VO_DATA = {
       title: 'YouTube Narration',
       icon: 'play-circle',
       desc: 'Charismatic, pacing-optimized, and retention-focused narration for educational, narrative, or documentary channels.',
-      coverImage: 'assets/images/sound_waves.png'
+      coverImage: 'assets/images/service_youtube.png'
     },
     {
       title: 'Audiobook Recording',
       icon: 'book-open',
       desc: 'Rich narration with distinctive character voices and pristine sound engineering for full-length fiction & non-fiction.',
-      coverImage: 'assets/images/audiobook_art.png'
+      coverImage: 'assets/images/service_audiobook.png'
     },
     {
       title: 'Radio Ads',
@@ -199,19 +199,19 @@ const VO_DATA = {
       title: 'TV Commercials',
       icon: 'tv',
       desc: 'Cinematic, professionally paced narration designed to integrate beautifully with high-end TV advertising mixes.',
-      coverImage: 'assets/images/commercial_automotive.png'
+      coverImage: 'assets/images/service_tv.png'
     },
     {
       title: 'Audio Editing',
       icon: 'sliders',
       desc: 'Comprehensive post-production: breath removal, de-clicking, equalizing, and leveling for broadcast-ready standards.',
-      coverImage: 'assets/images/recording_booth.png'
+      coverImage: 'assets/images/service_editing.png'
     },
     {
       title: 'Fast Delivery',
       icon: 'zap',
       desc: '24-hour turnaround on scripts under 1,000 words. Recorded and mastered in a professional double-walled studio.',
-      coverImage: 'assets/images/studio_mic.png'
+      coverImage: 'assets/images/service_fast.png'
     }
   ],
 

@@ -222,6 +222,17 @@
   box-shadow: 0 8px 25px rgba(6, 182, 212, 0.5);
 }
 
+.btn-white {
+  background: #ffffff;
+  color: #0b0f19;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.15);
+}
+.btn-white:hover {
+  background: #f8fafc;
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.25);
+}
+
 .btn-outline {
   background: transparent;
   border: 1px solid var(--primary-blue);
