@@ -9,14 +9,14 @@ const VO_DATA = {
   demos: [
     {
       id: 'demo-commercial-1',
-      title: 'Automotive Brand Commercial',
+      title: 'Next-Gen Automotive',
       category: 'commercial',
       categoryLabel: 'Commercial',
       duration: '0:30',
       durationSeconds: 30,
       audioPath: 'assets/audio/commercial_automotive.mp3',
-      coverImage: 'assets/images/commercial_automotive.png',
-      description: 'Energetic, gritty, and deep tone for a modern high-end sports car campaign.',
+      coverImage: 'assets/images/next_gen_automotive.png',
+      description: 'Gritty commercial campaign voicing next-gen electric SUV slots.',
       accent: 'Mid-Atlantic',
       accentLabel: 'Mid-Atlantic (US)'
     },
@@ -61,14 +61,14 @@ const VO_DATA = {
     },
     {
       id: 'demo-corporate-1',
-      title: 'Global Tech Keynote Introduction',
+      title: 'Global Tech Keynote',
       category: 'corporate',
       categoryLabel: 'Corporate Narration',
       duration: '1:15',
       durationSeconds: 75,
       audioPath: 'assets/audio/corporate_keynote.mp3',
-      coverImage: 'assets/images/corporate_keynote.png',
-      description: 'Authoritative, inspiring, and direct narrative styling for tech summits.',
+      coverImage: 'assets/images/global_tech_keynote.jpg',
+      description: 'Inspiring corporate narration briefing for major summit introductions.',
       accent: 'North American',
       accentLabel: 'Standard American'
     },

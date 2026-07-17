@@ -54,7 +54,7 @@
 }
 
 /* Responsive language details */
-@media (max-width: 900px) {
+@media (max-width: 1024px) and (min-width: 601px) {
   .accents-showcase-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -75,8 +75,8 @@
   }
 }
 
-/* Center 3rd language card in tab view and 1024px */
-@media (max-width: 1024px) and (min-width: 769px) {
+/* Center 3rd language card in tab view */
+@media (max-width: 1024px) and (min-width: 601px) {
   .languages-view .card-grid {
     grid-template-columns: repeat(2, 1fr);
   }

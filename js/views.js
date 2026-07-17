@@ -194,12 +194,12 @@ const VO_VIEWS = {
               <!-- Demo 1 -->
               <div class="card home-demo-card">
                 <div class="card-img-wrapper">
-                  <img src="assets/images/commercial_automotive.png" alt="Automotive Brand Campaign" class="card-img" loading="lazy">
+                  <img src="assets/images/next_gen_automotive.png" alt="Next-Gen Automotive" class="card-img" loading="lazy">
                 </div>
                 <div class="card-body">
                   <span class="card-category">Commercial</span>
-                  <h3 class="card-title-fixed">Automotive Brand Campaign</h3>
-                  <p class="card-desc">Gravelly, energetic, and highly dramatic voice styling for next-gen sports cars.</p>
+                  <h3 class="card-title-fixed">Next-Gen Automotive</h3>
+                  <p class="card-desc">Gritty commercial campaign voicing next-gen electric SUV slots.</p>
                   
                   <div class="inline-audio-wave">
                     <canvas class="canvas-waveform" data-track-id="demo-commercial-1"></canvas>
@@ -244,12 +244,12 @@ const VO_VIEWS = {
               <!-- Demo 3 -->
               <div class="card home-demo-card">
                 <div class="card-img-wrapper">
-                  <img src="assets/images/corporate_keynote.png" alt="Global Tech Keynote" class="card-img" loading="lazy">
+                  <img src="assets/images/global_tech_keynote.jpg" alt="Global Tech Keynote" class="card-img" loading="lazy">
                 </div>
                 <div class="card-body">
                   <span class="card-category">Corporate</span>
                   <h3 class="card-title-fixed">Global Tech Keynote</h3>
-                  <p class="card-desc">Inspiring, authoritative voice narration designed to lead and represent major tech summits.</p>
+                  <p class="card-desc">Inspiring corporate narration briefing for major summit introductions.</p>
                   
                   <div class="inline-audio-wave">
                     <canvas class="canvas-waveform" data-track-id="demo-corporate-1"></canvas>
@@ -653,7 +653,7 @@ const VO_VIEWS = {
               
               <div class="horizontal-scroll-container-flex" id="campaigns-scroll-container">
                 <div class="horizontal-slide-item" style="flex:0 0 350px; background:var(--card-bg); padding:24px; border-radius:var(--radius-md); border:1px solid var(--glass-border); display:flex; flex-direction:column; align-items:center; text-align:center;">
-                  <img src="assets/images/commercial_production.png" alt="Commercial" style="width:100%; aspect-ratio:16/10; object-fit:cover; border-radius:var(--radius-sm); margin-bottom:16px;">
+                  <img src="assets/images/next_gen_automotive.png" alt="Commercial" style="width:100%; aspect-ratio:16/10; object-fit:cover; border-radius:var(--radius-sm); margin-bottom:16px;">
                   <h4>Next-Gen Automotive</h4>
                   <p style="font-size:0.85rem; color:var(--text-secondary); margin-top:8px;">Gritty commercial campaign voicing next-gen electric SUV slots.</p>
                 </div>
@@ -663,7 +663,7 @@ const VO_VIEWS = {
                   <p style="font-size:0.85rem; color:var(--text-secondary); margin-top:8px;">ENGAGING technical eLearning course detailing AI neural patterns.</p>
                 </div>
                 <div class="horizontal-slide-item" style="flex:0 0 350px; background:var(--card-bg); padding:24px; border-radius:var(--radius-md); border:1px solid var(--glass-border); display:flex; flex-direction:column; align-items:center; text-align:center;">
-                  <img src="assets/images/sound_waves.png" alt="Corporate" style="width:100%; aspect-ratio:16/10; object-fit:cover; border-radius:var(--radius-sm); margin-bottom:16px;">
+                  <img src="assets/images/global_tech_keynote.jpg" alt="Corporate" style="width:100%; aspect-ratio:16/10; object-fit:cover; border-radius:var(--radius-sm); margin-bottom:16px;">
                   <h4>Global Tech Keynote</h4>
                   <p style="font-size:0.85rem; color:var(--text-secondary); margin-top:8px;">Inspiring corporate narration briefing for major summit introductions.</p>
                 </div>
@@ -983,7 +983,7 @@ const VO_VIEWS = {
           <div class="container-width">
             <div class="grid-split-2">
               <div class="split-image-wrapper">
-                <img src="assets/images/commercial_production.png" alt="Sleek premium electric SUV campaign visual" class="split-photo">
+                <img src="assets/images/next_gen_automotive.png" alt="Sleek premium electric SUV campaign visual" class="split-photo">
               </div>
               <div class="split-text-content">
                 <span class="accent-title">Featured Campaign Study</span>
