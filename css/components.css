@@ -314,6 +314,38 @@
   background: rgba(248, 250, 252, 0.03);
 }
 
+/* Date Input & Calendar Icon Visibility */
+input[type="date"] {
+  color-scheme: dark;
+}
+
+[data-theme="light"] input[type="date"] {
+  color-scheme: light;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  padding: 4px;
+  border-radius: var(--radius-sm);
+  transition: filter var(--transition-smooth), opacity var(--transition-smooth), transform var(--transition-smooth);
+}
+
+[data-theme="dark"] input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: brightness(0) invert(1) !important;
+  opacity: 1 !important;
+}
+
+[data-theme="dark"] input[type="date"]::-webkit-calendar-picker-indicator:hover {
+  filter: brightness(0) invert(1) drop-shadow(0 0 4px #ffffff) !important;
+  opacity: 1 !important;
+  transform: scale(1.1);
+}
+
+[data-theme="light"] input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: brightness(0) !important;
+  opacity: 0.8 !important;
+}
+
 .form-textarea {
   min-height: 140px;
   resize: vertical;

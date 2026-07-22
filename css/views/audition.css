@@ -11,6 +11,36 @@
   justify-content: center;
 }
 
+/* Audition Delivery Deadline calendar icon styling */
+#aud-deadline {
+  color-scheme: dark;
+}
+
+[data-theme="light"] #aud-deadline {
+  color-scheme: light;
+}
+
+#aud-deadline::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+[data-theme="dark"] #aud-deadline::-webkit-calendar-picker-indicator {
+  filter: brightness(0) invert(1) !important;
+  opacity: 1 !important;
+}
+
+[data-theme="dark"] #aud-deadline::-webkit-calendar-picker-indicator:hover {
+  filter: brightness(0) invert(1) drop-shadow(0 0 6px rgba(255, 255, 255, 0.9)) !important;
+  transform: scale(1.1);
+}
+
+[data-theme="light"] #aud-deadline::-webkit-calendar-picker-indicator {
+  filter: brightness(0) !important;
+  opacity: 0.85 !important;
+}
+
 /* Make forms responsive to smaller devices */
 @media (max-width: 600px) {
   .form-grid {
