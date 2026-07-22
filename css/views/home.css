@@ -15,22 +15,28 @@
 }
 
 .home-view .hero-banner {
-  background-image: 
-    radial-gradient(circle at 75% 25%, rgba(6, 182, 212, 0.14) 0%, transparent 50%),
-    radial-gradient(circle at 20% 80%, rgba(139, 92, 246, 0.16) 0%, transparent 50%),
-    linear-gradient(180deg, rgba(15, 23, 42, 0.82) 0%, rgba(15, 23, 42, 0.90) 100%),
-    url('../../assets/images/home_hero_bg.png');
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
+  background: radial-gradient(circle at 75% 25%, rgba(6, 182, 212, 0.14) 0%, transparent 50%),
+              radial-gradient(circle at 20% 80%, rgba(139, 92, 246, 0.16) 0%, transparent 50%);
+  position: relative;
 }
 
-[data-theme="light"] .home-view .hero-banner {
-  background-image: 
-    radial-gradient(circle at 75% 25%, rgba(6, 182, 212, 0.08) 0%, transparent 50%),
-    radial-gradient(circle at 20% 80%, rgba(139, 92, 246, 0.08) 0%, transparent 50%),
-    linear-gradient(180deg, rgba(248, 250, 252, 0.88) 0%, rgba(248, 250, 252, 0.94) 100%),
-    url('../../assets/images/home_hero_bg.png');
+.hero-bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.45;
+  z-index: 0;
+  pointer-events: none;
+  filter: brightness(0.85) contrast(1.1);
+}
+
+[data-theme="light"] .hero-bg-img {
+  opacity: 0.25;
+  filter: brightness(1.1) contrast(0.9);
 }
 .hero-container {
   max-width: 1400px;
